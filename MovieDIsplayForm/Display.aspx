@@ -38,7 +38,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:RegularExpressionValidator runat="server" ID="rgvYear" ControlToValidate="txtYear" ValidationExpression="^(19[20-99]|200[0-9]|201[0-9]|)|\s$" ValidationGroup="Search" ForeColor="Red" ErrorMessage="Year should be in the range from 1920-2019"></asp:RegularExpressionValidator>
+                            <asp:RegularExpressionValidator runat="server" ID="rgvYear" ControlToValidate="txtYear" ValidationExpression="^(19[2-9]\d|20[0-4]\d|2050)|\s$" ValidationGroup="Search" ForeColor="Red" ErrorMessage="Year should be in the range from 1920-2019"></asp:RegularExpressionValidator>
                         </td>
                     </tr>
                     <tr>
