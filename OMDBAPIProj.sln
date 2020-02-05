@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMDBBase", "OMDBBase\OMDBBase.csproj", "{A777FEFD-8D97-4946-A5C7-263D5E2B69D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMDBMovieScan", "OMDBMovieScan\OMDBMovieScan.csproj", "{5E50BB24-A8B7-4D6A-B323-BD268A5A90C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger", "Logger\Logger.csproj", "{2B7CC77B-BE81-4850-96CC-9A1965E4C1FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseAppender", "ResponseAppender\ResponseAppender.csproj", "{89F1B99A-2F57-472B-83C9-AEF3A031ABAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieDIsplayForm", "MovieDIsplayForm\MovieDIsplayForm.csproj", "{6EEE3B06-4DB0-4F38-A5B8-00A91C1C7757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMDBTest", "OMDBTest\OMDBTest.csproj", "{FF2D1E75-356B-4B32-9537-06D6507203E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A777FEFD-8D97-4946-A5C7-263D5E2B69D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A777FEFD-8D97-4946-A5C7-263D5E2B69D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A777FEFD-8D97-4946-A5C7-263D5E2B69D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A777FEFD-8D97-4946-A5C7-263D5E2B69D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E50BB24-A8B7-4D6A-B323-BD268A5A90C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E50BB24-A8B7-4D6A-B323-BD268A5A90C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E50BB24-A8B7-4D6A-B323-BD268A5A90C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E50BB24-A8B7-4D6A-B323-BD268A5A90C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7CC77B-BE81-4850-96CC-9A1965E4C1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7CC77B-BE81-4850-96CC-9A1965E4C1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7CC77B-BE81-4850-96CC-9A1965E4C1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7CC77B-BE81-4850-96CC-9A1965E4C1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F1B99A-2F57-472B-83C9-AEF3A031ABAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F1B99A-2F57-472B-83C9-AEF3A031ABAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F1B99A-2F57-472B-83C9-AEF3A031ABAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F1B99A-2F57-472B-83C9-AEF3A031ABAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EEE3B06-4DB0-4F38-A5B8-00A91C1C7757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEE3B06-4DB0-4F38-A5B8-00A91C1C7757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEE3B06-4DB0-4F38-A5B8-00A91C1C7757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEE3B06-4DB0-4F38-A5B8-00A91C1C7757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2D1E75-356B-4B32-9537-06D6507203E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2D1E75-356B-4B32-9537-06D6507203E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2D1E75-356B-4B32-9537-06D6507203E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2D1E75-356B-4B32-9537-06D6507203E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81A6E993-14FF-476C-9D6E-428CBBF202BC}
+	EndGlobalSection
+EndGlobal
