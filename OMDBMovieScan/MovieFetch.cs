@@ -56,7 +56,7 @@ namespace OMDBMovieScan
                 else
                 {
                     this.iappender.AddtoFile(this.GetType(), _url, path);
-                    string resultJSON = SendRequest(_url).Result;
+                    string resultJSON = SendRequest(_url);
                     this.iappender.AddtoFile(this.GetType(), resultJSON, path);
                     this.Ilog.LogInfo(resultJSON ?? "Result fetched successfully");
                     JavaScriptSerializer jSerialize = new JavaScriptSerializer();
@@ -99,7 +99,7 @@ namespace OMDBMovieScan
                 else
                 {
                     this.iappender.AddtoFile(this.GetType(), _url, path);
-                    string resultJSON = SendRequest(_url).Result;
+                    string resultJSON = SendRequest(_url);
                     this.iappender.AddtoFile(this.GetType(), resultJSON, path);
                     this.Ilog.LogInfo(resultJSON ?? "Result fetched successfully");
                     JavaScriptSerializer jSerialize = new JavaScriptSerializer();
@@ -118,16 +118,12 @@ namespace OMDBMovieScan
 
         }
 
-        private async Task<string> SendRequest(string url)
+        private string SendRequest(string url)
         {
             string objReturn = String.Empty;
             try
             {
-                //using (HttpClient objclient = new HttpClient())
-                //{
-                //objclient.MaxResponseContentBufferSize = 2147483644;
-                //objReturn = await objclient.GetStringAsync(url);
-
+                
                 WebRequest request = WebRequest.Create(url);
 
                 WebResponse response = request.GetResponse();
@@ -139,12 +135,7 @@ namespace OMDBMovieScan
                     objReturn = reader.ReadToEnd();
                 }
 
-
-
-                //reader.Close();
-                response.Close();
-
-                //}
+                response.Close();                
             }
             catch (Exception ex)
             {
