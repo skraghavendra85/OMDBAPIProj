@@ -47,7 +47,7 @@ namespace OMDBMovieScan
 
             try
             {
-                QueryBuilder qb = new QueryBuilder();
+                QueryBuilder qb = new QueryBuilder(this.Ilog);
                 this.Ilog.LogInfo($"Entering the Querybuilder with title:{title},year: {year ?? "NULL"},plot:{plot ?? "NULL"}");
                 string _url = qb.GetQMBTitle(title, year, plot);
                 this.Ilog.LogInfo("Query generated");
@@ -87,7 +87,7 @@ namespace OMDBMovieScan
         {
             List<T> retObj;
 
-            QueryBuilder qb = new QueryBuilder();
+            QueryBuilder qb = new QueryBuilder(this.Ilog);
             try
             {
                 this.Ilog.LogInfo($"Entering the Querybuilder with search:{searchkeyword},year: {year ?? "NULL"},plot:{plot ?? "NULL"}");

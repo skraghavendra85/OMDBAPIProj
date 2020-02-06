@@ -4,20 +4,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Logger;
 namespace OMDBMovieScan
 {
     class QueryBuilder
     {
         public string APIBaseURL { get; set; }
         public string APIKey { get; set; }
-        Logger.Logger log = new Logger.Logger();
-        public QueryBuilder()
+        ILogger log = null;
+        public QueryBuilder(ILogger iLog)
         {
             try
             {
                 this.APIBaseURL = string.IsNullOrEmpty(ConfigurationManager.AppSettings["_baseURL"]) ? "" : ConfigurationManager.AppSettings["_baseURL"].ToString();
                 this.APIKey = string.IsNullOrEmpty(ConfigurationManager.AppSettings["_apiKey"]) ? "" : ConfigurationManager.AppSettings["_apiKey"].ToString();
+                this.log = iLog;
             }
             catch(Exception ex)
             {
